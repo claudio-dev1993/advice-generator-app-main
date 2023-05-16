@@ -20,11 +20,10 @@
 
 body {
     min-height: 100vh;
-    width: 23.4rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
     background: var(--Dark-Blue);
     font-family: Manrope;
 }
@@ -33,7 +32,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: 0 1rem;
-    width: 21.4rem;
+    max-width: 21.4rem;
     min-height: 19.6rem;
     background: var(--Linear-grey-to-blue);
     border-radius: .625rem;
@@ -117,11 +116,13 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    position: absolute;
+    top: 95%;
 }
 
 .footer__credits {
     color: var(--Light-Cyan);
-    font-size: .6rem;
+    font-size: .7rem;
 }
 
 .footer__credits-link {
@@ -130,7 +131,7 @@ main {
 
 @media (min-width: 768px) {
     .main {
-        width: 30rem;
+        max-width: 30rem;
     }
 
     .main__divider::after {
@@ -140,11 +141,32 @@ main {
 
 @media (min-width: 1024px) {
     .main {
-        width: 35rem;
+        max-width: 33.75rem ;
+        min-height: 20.75rem;
+    }
+
+    .main__article {
+        min-height: 12.2rem;
+    }
+    .main__header-title {
+        margin: 48px 0 0 ;
+    }
+
+    .main__divider::after {
+        content: url('/images/pattern-divider-desktop.svg');
     }
 
     body {
         justify-content: center;
         gap: 4rem;
+    }
+
+    .footer {
+        position: absolute;
+        top: 95%;
+    }
+
+    .footer__credits {
+        font-size: 1rem;
     }
 }
