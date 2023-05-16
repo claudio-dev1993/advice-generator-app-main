@@ -38,7 +38,7 @@ main {
     min-height: 18rem;
     background: var(--Linear-grey-to-blue);
     border-radius: .8rem;
-    box-shadow: 1px 0px 8px 2px  hsl(217, 19%, 24%);
+    box-shadow: 1px 1px 6px 1px  hsl(217, 19%, 24%);
 }
 
 .main__header,
@@ -61,12 +61,15 @@ main {
     color: var(--Neon-Green);
 }
 
+.main__article {
+    align-items: center;
+}
+
 .main__article-text {
     font-size: 1.3rem;
     color: var(--Light-Cyan);
     text-align: center;
 }
-
 
 .main__article-text::before {
     content: open-quote;

@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.querySelector('.main__article-text').textContent = content.advice
 })
 
-document.getElementById('diceButton').addEventListener('click', async (ev) => {
+document.getElementById('diceButton').addEventListener('click', async () => {
     const content = await fetchAdvice()
     document.getElementById('adviceId').textContent = content.id
     document.querySelector('.main__article-text').textContent = content.advice
